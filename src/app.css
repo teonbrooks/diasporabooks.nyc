@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-orange: #E8921A;
+  --color-brand-blue: #4A86C8;
+  --color-brand-orange-light: #F5A94D;
+  --color-brand-blue-light: #6BA3D6;
+  --color-brand-purple: #7B4FC9;
+  --font-serif: "Georgia", "Times New Roman", serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+.gradient-brand {
+  background: linear-gradient(135deg, #4A86C8 0%, #8B9DC3 40%, #C4976A 70%, #E8921A 100%);
+}
+
+.pattern-dots {
+  background-image: radial-gradient(circle, rgba(255,255,255,0.4) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.gradient-brand-text {
+  background: linear-gradient(135deg, #4A86C8, #E8921A);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
